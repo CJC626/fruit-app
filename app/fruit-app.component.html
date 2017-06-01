@@ -1,0 +1,10 @@
+<h1>Begin Fruit Apps</h1>
+<div class="fruit-grid">
+    <div *ngFor="let fruitgroup of fruitTree" class="fruit-row">
+        <a *ngFor="let fruit of fruitgroup" class="fruit-square-link">
+            <div class="fruit-square">
+                <h4>{{fruit.name}}</h4>
+            </div>
+        </a>
+    </div>
+</div>
