@@ -2,7 +2,7 @@
 <div class="fruit-grid">
     <div *ngFor="let fruitgroup of fruitTree" class="fruit-row">
         <a *ngFor="let fruit of fruitgroup" class="fruit-square-link">
-            <div class="fruit-square">
+            <div class="fruit-square" [ngStyle]="{'background-color': fruit.color}">
                 <h4>{{fruit.name}}</h4>
             </div>
         </a>

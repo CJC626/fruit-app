@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
-import { Fruit } from './fruit';
+import { Fruit } from '../fruit';
 import { Observable } from 'rxjs/observable';
 
 @Component({
   selector: 'cjc-fruits',
-  templateUrl: 'app/fruit-app.component.html',
-  styleUrls: ['app/fruit-app.component.css']
+  templateUrl: 'app/fruit-shelf/fruit-app.component.html',
+  styleUrls: ['app/fruit-shelf/fruit-app.component.css']
 })
 export class FruitAppComponent  { 
   fruits : Fruit[] = [
-    {"name":"apple", "size":2, "color":"red"},
+    {"name":"apple", "size":2, "color":"maroon"},
     {"name":"orange", "size":2, "color":"orange"},
-    {"name":"avocado", "size":2, "color":"green"},
-    {"name":"peach", "size":2, "color":"peach"},
+    {"name":"avocado", "size":2, "color":"darkgreen"},
+    {"name":"peach", "size":2, "color":"lightcoral"},
     {"name":"banana", "size":2, "color":"yellow"},
     {"name":"tomato", "size":2, "color":"red"},
-    {"name":"blueberry", "size":2, "color":"blue"},
-    {"name":"strawberry", "size":2, "color":"red"},
-    {"name":"grape", "size":2, "color":"white"},
-    {"name":"grape", "size":2, "color":"red"}
+    {"name":"blueberry", "size":2, "color":"darkblue"},
+    {"name":"strawberry", "size":2, "color":"crimson"},
+    {"name":"whitegrape", "size":2, "color":"lightgreen"},
+    {"name":"redgrape", "size":2, "color":"purple"}
   ];
   fruitTree = this.splitFruits(this.fruits);
   name = 'Angular'; 
