@@ -11,7 +11,10 @@ export class InMemoryFruitService implements InMemoryDbService {
         {"id":7,"name":"blueberry", "size":2, "color":"darkblue", "stockAmt": 5},
         {"id":8,"name":"strawberry", "size":2, "color":"crimson", "stockAmt": 5},
         {"id":9,"name":"whitegrape", "size":2, "color":"lightgreen", "stockAmt": 5},
-        {"id":10,"name":"redgrape", "size":2, "color":"purple", "stockAmt": 5}
+        {"id":10,"name":"redgrape", "size":2, "color":"purple", "stockAmt": 5},
+        {"id":11,"name":"mango", "size":2, "color":"lightcoral", "stockAmt": 5},
+        {"id":12,"name":"lemon", "size":2, "color":"yellow", "stockAmt": 5},
+        {"id":13,"name":"lime", "size":2, "color":"green", "stockAmt": 5}
     ];
     return {fruits};
   }
