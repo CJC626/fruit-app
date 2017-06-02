@@ -1,7 +1,7 @@
-<h1>Begin Fruit Apps</h1>
 <div class="fruit-grid">
+<h2>Fruit Shelf</h2>
     <div *ngFor="let fruitgroup of fruitTree" class="fruit-row">
-        <a *ngFor="let fruit of fruitgroup" class="fruit-square-link">
+        <a *ngFor="let fruit of fruitgroup" [routerLink]="['/stocker', fruit.id]" class="fruit-square-link">
             <div class="fruit-square" [ngStyle]="{'background-color': fruit.color}">
                 <h4>{{fruit.name}}</h4>
             </div>
