@@ -9,6 +9,7 @@ input {
   height: 2em;
   font-size: 1em;
   padding-left: .4em;
+  width: 75px;
 }
 button {
   margin-top: 20px;
@@ -32,6 +33,5 @@ button:disabled {
 
 /*Anabel*/
 .contain{
-  max-width: 25vw;
-  margin-left: 40%;
+text-align: center;
 }
