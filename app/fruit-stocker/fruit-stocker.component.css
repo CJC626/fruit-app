@@ -18,6 +18,8 @@ button {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer; cursor: hand;
+  max-width: 10vw;
+  min-width:5vw;
 }
 button:hover {
   background-color: #cfd8dc;
@@ -26,4 +28,10 @@ button:disabled {
   background-color: #eee;
   color: #ccc; 
   cursor: auto;
+}
+
+/*Anabel*/
+.contain{
+  max-width: 25vw;
+  margin-left: 40%;
 }
