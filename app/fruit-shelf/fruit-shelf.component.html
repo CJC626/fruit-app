@@ -1,8 +1,8 @@
-<div class="fruit-grid">
-<h2>Fruit Shelf</h2>
-    <div *ngFor="let fruitgroup of fruitTree" class="fruit-row">
-        <a *ngFor="let fruit of fruitgroup" [routerLink]="['/stocker', fruit.id]" class="fruit-square-link">
-            <div class="fruit-square" [ngStyle]="{'background-color': fruit.color}">
+<div class="container">
+    <h2>Fruit Shelf</h2>
+    <div *ngFor="let fruitgroup of fruitTree">
+        <a *ngFor="let fruit of fruitgroup" [routerLink]="['/stocker', fruit.id]">
+            <div class="col-xs-3 col-md-2 fix-padding" [ngStyle]="{'background-color': fruit.color}">
                 <h4>{{fruit.name}}</h4>
             </div>
         </a>

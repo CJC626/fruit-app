@@ -1,12 +1,12 @@
-<div *ngIf="fruit">
+<div *ngIf="fruit" class="contain">
   <h2>Add more {{fruit.name}}!</h2>
   <div>
-    <label>Name: </label>{{fruit.name}}</div>
+    <label>Name: </label> {{fruit.name}}</div>
   <div>
     <label>amt: </label>
     <!--input [(ngModel)]="hero.name" placeholder="name" /-->
-    <input [(ngModel)]="fruit.stockAmt" placeholder="amt" />
-   </div>
+    <input [(ngModel)]="fruit.stockAmt" placeholder="amt" type="number" />
+  </div>
   <button (click)="goBack()">Back</button>
   <button (click)="save()">Save</button>
 </div>
